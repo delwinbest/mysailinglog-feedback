@@ -101,7 +101,7 @@ The application uses GitHub embed widgets with these configurations:
 ### Features Page
 ```html
 <iframe
-  src="https://github.com/delwinbest/mysailinglog-feedback/issues?q=is%3Aissue+is%3Aopen+label%3Afeature-request+sort%3Areactions-+1-desc"
+  src="https://github.com/delwinbest/mysailinglog-feedback/issues?q=is%3Aissue+is%3Aopen+label%3Afeature-request+sort%3Aupdated-desc"
   width="100%"
   height="600"
   frameBorder="0"
