@@ -1,0 +1,101 @@
+name: ✨ Feature Request
+description: Suggest a new feature or enhancement for My Sailing Log
+title: "[Feature]: "
+labels: ["feature-request", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a new feature! We value your input and want to make My Sailing Log the best tool for sailors.
+        
+        **Before submitting:**
+        - Check if this feature has already been requested
+        - Consider if this feature aligns with the core purpose of My Sailing Log
+        - Provide a clear use case and benefit
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority Level
+      description: How important is this feature to you?
+      options:
+        - Low - Nice to have
+        - Medium - Would be helpful
+        - High - Important for my workflow
+        - Critical - Cannot use the app effectively without this
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Describe how you would use this feature
+      placeholder: |
+        Example: "As a sailor who tracks multiple boats, I want to be able to..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve?
+      placeholder: |
+        Example: "Currently, I have to manually calculate wind patterns, which takes 20 minutes per trip..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe your ideal solution
+      placeholder: |
+        Example: "Add a wind analysis tool that automatically calculates and displays..."
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches?
+      placeholder: |
+        Example: "I've tried using [other tool], but it doesn't integrate with my existing data..."
+      render: markdown
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other information that might be helpful?
+      placeholder: |
+        - How often would you use this feature?
+        - Would you be willing to help test this feature?
+        - Any specific technical requirements?
+      render: markdown
+
+  - type: textarea
+    id: mockups
+    attributes:
+      label: Mockups or Examples
+      description: If you have any mockups, screenshots, or examples from other apps
+      placeholder: "Drag and drop images here or paste URLs to examples"
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to our Code of Conduct
+      options:
+        - label: I have searched for similar feature requests and this is not a duplicate
+          required: true
+        - label: I have read the Code of Conduct and agree to follow it
+          required: true
+        - label: I am willing to help test this feature if implemented
+          required: false
